@@ -8,3 +8,5 @@
 .kid img{display:block;aspect-ratio:4/5;object-fit:contain;background:white;padding:7px;border-width:3px;border-radius:20px;margin-bottom:7px}
 .picture img{max-height:60dvh}
 @media(max-width:640px){.strip{grid-template-columns:repeat(2,minmax(0,1fr));gap:20px 12px}.kid img{padding:4px;border-radius:14px}}
+
+.parents{background:#302347;color:#fff4d7;padding:clamp(28px,5vw,62px) 0}.parents h2{text-align:center;margin:0 0 24px}.parents i{color:#ffcc77}.parents figure{margin:0}.parents img{width:100%;height:auto;display:block;border-radius:20px}.parents figcaption{max-width:650px;margin:18px auto 0;text-align:center;font-size:1.12em}@media(max-width:610px){header .bar{flex-wrap:wrap;gap:4px 16px}header nav{gap:14px}.parents h2{font-size:36px}.parents img{border-radius:12px}}
