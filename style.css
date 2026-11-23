@@ -2,3 +2,9 @@
 @media(max-width:820px){.strip{grid-template-columns:repeat(4,1fr)}.intro{padding-block:46px}.heading{display:block}.heading p{max-width:none}.kids,.bookshelf{padding-block:42px}}
 @media(max-width:610px){body{font-size:16px}.brand{font-size:18px}nav{gap:14px}.bar{padding-block:12px}.intro{grid-template-columns:1fr;padding:30px 0 34px;gap:24px}.copy h1{font-size:clamp(50px,11vw,76px);margin:12px 0}.copy h1 br{display:none}.copy h1 em:before{content:' '}.copy p{margin:10px 0}.scene{width:96%;margin:auto}.scene img{max-height:295px;object-fit:cover}.strip{grid-template-columns:repeat(3,1fr);gap:18px 9px}.kid strong{font-size:20px}.grownin,.bookshelf{grid-template-columns:1fr;gap:22px}.grownin{padding:26px 0}.grownin>div:last-child{grid-row:1}.cover img{width:145px}.kicker{font-size:13px}.picture img{max-height:42dvh}.scene span{font-size:46px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+
+/* Keep each complete illustration visible at every screen width. */
+.strip{grid-template-columns:repeat(4,minmax(0,1fr));gap:26px 18px}
+.kid img{display:block;aspect-ratio:4/5;object-fit:contain;background:white;padding:7px;border-width:3px;border-radius:20px;margin-bottom:7px}
+.picture img{max-height:60dvh}
+@media(max-width:640px){.strip{grid-template-columns:repeat(2,minmax(0,1fr));gap:20px 12px}.kid img{padding:4px;border-radius:14px}}
