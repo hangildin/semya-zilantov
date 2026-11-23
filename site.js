@@ -25,6 +25,8 @@ kids.forEach(([file,name,day,desc,color],i)=>{
  const img=new Image();img.src=file+'.webp';img.alt='';const title=document.createElement('strong');title.textContent=name;
  const subtitle=document.createElement('small');subtitle.textContent=day;b.append(img,title,subtitle);b.onclick=()=>openAlbum(portraits,i,'Семейный альбом');get('portraits').append(b);
 });
+get('boat').onclick=()=>openAlbum([['boat','Кораблик у кувшинок','Течение вынесло кораблик к цветам. Где бы ты поставил для него маленькую пристань?']],0,'На берегу Казанки');
+const boatCard=document.createElement('a');boatCard.href='#parents';boatCard.className='kid';boatCard.innerHTML='<img src="boat.webp" alt=""><strong>Кораблик</strong><small>К маме и папе</small>';get('portraits').append(boatCard);
 get('read').onclick=()=>openAlbum(sheets,1,'Первая книга');get('close').onclick=()=>viewer.close();
 get('prev').onclick=()=>{page--;display()};get('next').onclick=()=>{page++;display()};
 viewer.addEventListener('keydown',event=>{if(event.key==='ArrowLeft'&&page>0){page--;display()}if(event.key==='ArrowRight'&&page<pages.length-1){page++;display()}});
